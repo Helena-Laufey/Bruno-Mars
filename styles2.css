@@ -1,0 +1,170 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    justify-content: center;
+}
+body {
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;   
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+header h1 {
+    font-weight: 800;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 -2px 8px rgb(255, 0, 0);
+    color: rgb(255, 65, 236);
+}
+.topnav {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    background-image: linear-gradient(#d52279, #6e0245);
+}
+.topnav a {
+    padding: .5rem 1rem;
+    border-bottom: 1px solid rgb(247, 223, 181);
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+}
+.footernav a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: none;
+}
+.container-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: linear-gradient(to bottom, rgb(234, 169, 17), rgb(162, 136, 35));
+    padding: 2rem;
+    color: white;
+}
+.footerlinks a {
+    padding: 0.5rem;
+    border: 3px dashed rgb(255, 255, 255);
+    margin: 2rem 1rem;
+}
+
+.textar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    text-align: center; 
+}
+.bakgrunnur {
+    background-color: rgb(255, 236, 185);
+    background-image: linear-gradient(to bottom, rgb(144, 4, 209), rgb(49, 0, 39));    
+    color: rgb(246, 226, 218);
+    padding-top: 2rem;
+}
+
+.topnav a:hover,
+.footernav a:hover {
+    background-color: white;
+    color: pink;
+}
+
+.topnav a:visited,
+.footernav a:visited{
+    color: blueviolet;
+}
+@media screen and (min-width:20rem) {
+    iframe {
+        height: 12rem;
+        width: 19rem;
+    }
+    .textar {
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 0;
+    }
+    .container-col {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
+@media screen and (min-width:37.5rem) {
+    iframe {
+        height: 15rem;
+        width: 20rem;
+    }
+    .textar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    .topnav {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .topnav a {
+        border: 0;
+        border-right: 1px solid rgb(243, 215, 175);
+    }
+    .topnav a:last-child {
+        border:0;
+    }
+    .container-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width:48rem) {
+    iframe {
+        height: 17rem;
+        width: 19rem;
+    }
+    header h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+    
+}
+@media screen and (min-width:60rem) {
+    iframe {
+        height: 21rem;
+        width: 27rem;
+    }
+    body {
+        font-size: 1.4rem;
+    }
+    header h1 {
+        font-size: 6rem;
+        text-align: center;
+    }
+    .topnav {
+        position: sticky;
+        top: 0;
+    }
+}
+@media screen and (min-width:80rem) {
+    iframe {
+        height: 22rem;
+        width: 29rem;
+    }
+    body {
+        font-size: 1.6rem;
+        line-height: 1.5;
+    }
+    header h1 {
+        font-size: 7rem;
+        text-align: center;
+    }
+}
+@media screen and (min-width:100rem) {
+    iframe {
+        height: 25rem;
+        width: 34rem;
+    }
+    body {
+        font-size: 1.8rem;
+    }
+}
